@@ -22,3 +22,9 @@ for d in data:
 	if len(d) < 100:
 		new.append(d)
 print("一共有%s筆留言長度小於100" %len(new))
+
+good = []
+for d in data:
+	if 'good' in d:
+		good.append(d)
+print("一共有%s筆留言稱讚產品好" %len(good))
