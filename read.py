@@ -17,8 +17,8 @@ for d in data:
 
 print("全部留言的平均長度是", sum_len/len(data))
 
-#[len(data[1]),.....,len(data[1000000])]
-#for num in data:
-	#data_two.append(len(num))
-	#print(data_two[0])
-
+new = []
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+print("一共有%s筆留言長度小於100" %len(new))
