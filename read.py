@@ -28,3 +28,6 @@ for d in data:
 	if 'good' in d:
 		good.append(d)
 print("一共有%s筆留言稱讚產品好" %len(good))
+
+bad = [d for d in data if "bad" in d]
+print("一共有%s筆留言稱讚產品不好" %len(bad))
